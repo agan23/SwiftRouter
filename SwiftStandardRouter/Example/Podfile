@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SwiftStandardRouter_Example' do
+  pod 'SwiftStandardRouter', :path => '../'
+
+  target 'SwiftStandardRouter_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase' , '~> 2.1.4'
+  end
+end
